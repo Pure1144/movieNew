@@ -47,21 +47,22 @@ export default function Home() {
         <div className="flex gap-x-3">
        
           
-            <NavigationMenu> 
+            <NavigationMenu>  
               <NavigationMenuList> 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger> Genres</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[450px] h-[300px] bg-red-200">
+                  <p>Genres</p>
+                  <h1>See lists of movies by genre</h1>
+
+                    <NavigationMenuLink> <div className="w-[450px] h-[300px] bg-red-200">
                       {mockCategory?.map((category, index) => (
                         <Badge className="bg-green-400 gap-x-15" key={index} >
                           <p>{category.name}</p>
                           <ChevronRight />
                         </Badge>
                       ))}
-                    </div>
-
-                    <NavigationMenuLink></NavigationMenuLink>
+                    </div></NavigationMenuLink>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -77,4 +78,4 @@ export default function Home() {
     </>
   );
 }
- test
+test2
